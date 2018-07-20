@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta charset="UTF-8"/>
+   <title>出力確認</title>
+</head>
+
+<body bgcolor="#BEF781">
+
+    <div th:object="${languageForm}">
+        <p th:text="*{selectedLanguage}"></p>が出勤しました
+    </div>
+
+</body>
+</html>

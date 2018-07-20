@@ -1,0 +1,78 @@
+<!--
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <link href="/css/sampleCss.css" th:href="@{/css/sampleCss.css}" rel="stylesheet"></link>
+
+<head>
+  <meta charset="utf-8">
+  <title>勤怠管理システム</title>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">勤怠管理システム</div>
+    <div class="header-right">
+      <ul>
+        <li></li>
+        <li></li>
+        <li class="selected"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="contact-form">
+      <div class="form-title">勤怠管理メニュー</div>
+      <form method="post" action="output.php">
+        <div class="form-item">名前</div>
+        <input type="text" name="name">
+
+        <div class="form-item">出勤時間</div>
+        <input type="text" name="time">
+
+        <div class="form-item">退勤時間</div>
+        <input type="text" name="timer">
+
+        <p><input type="submit" value="送信"></p>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="like-box">
+    </div>
+  </div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>勤怠管理システム</title>
+</head>
+
+	<body>
+
+    		<form role="form" action="/outpg01" th:action="@{/outpg01}" th:object="${webForm}" method="post">
+    		<p  th:text="#{please.pid}">Please input PID</p>
+ 		   <input type="text"  th:field="*{inputPid}" />
+    		<span  th:if="${#fields.hasErrors('inputPid')}" th:errors="*{inputPid}">error!</span>
+   			 <br />
+   			 <p  th:text="#{please.pwd}">Please input PID</p>
+   			 <input type="password"  th:field="*{inputPwd}" />
+   			 <span  th:if="${#fields.hasErrors('inputPwd')}" th:errors="*{inputPwd}">error!</span><br />
+   			  <button type="submit">送信</button>
+			</form>
+
+	</body>
+
+</html>

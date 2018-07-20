@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta charset="UTF-8"/>
+   <title>入力結果</title>
+</head>
+	<body>
+  	  <div class="header-left">勤怠管理システム</div>
+
+		<div th:object="${webForm}">
+    	 <p  th:text="*{inputPid}"></p>
+    	 <p  th:text="*{inputPwd}"></p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>勤怠管理システム</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">勤怠管理システム</div>
+    <div class="header-right">
+      <ul>
+        <li></li>
+        <li></li>
+        <li class="selected"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="contact-form">
+      <div class="form-title">勤怠管理メニュー</div>
+      <form method="post" action="output.php">
+        <div class="form-item">名前</div>
+        <input type="text" name="name">
+
+        <div class="form-item">出勤時間</div>
+        <input type="text" name="time">
+
+        <div class="form-item">退勤時間</div>
+        <input type="text" name="timer">
+
+        <p><input type="submit" value="送信"></p>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="like-box">
+    </div>
+  </div>
+</body>
+</html>

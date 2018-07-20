@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <meta charset="UTF-8"/>
+   <title>勤怠管理システム</title>
+</head>
+
+<!--<body bgcolor="#BEF781">-->
+ <body bgcolor="red">
+ <h1>勤怠管理システムへようこそ</h1>
+    <form action="./confirm" th:object="${languageForm}">
+        <div th:each="item : ${languageMapItems}">
+            <input type="radio" name="languages"
+                th:value="${item.key}" th:text="${item.value}" th:field="*{selectedLanguage}"/>
+        </div>
+
+        <input type="submit" value="出勤"/>
+        <input type="submit" value="退勤"/>
+    </form>
+
+</body>
+</html>
