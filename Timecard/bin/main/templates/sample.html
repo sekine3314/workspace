@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>入力画面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>入力画面</h1>
+	<div>
+    	入力してください。
+	</div>
+	<p>現在時刻 <span th:text="${now}"></span></p>
+	<br />
+	<form method="post" action="formpost">
+		<span>名前: </span>
+		<input type="text" name="name" value="" />
+		<br />
+		<span>出勤時間: </span>
+		<input type="text" name="age" value="" />
+		<br />
+		<span>退勤時間: </span>
+		<input type="text" name="time" value="" />
+		<br />
+		<input type="submit" value="OK" />
+	</form>
+</body>
+</html>

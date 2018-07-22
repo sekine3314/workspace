@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>出力画面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>出力画面</h1>
+	<div>
+    	入力内容は以下の通りです。
+	</div>
+	<br />
+	<form method="post" action="formpost">
+		<span>名前: </span>
+		<span th:text="${name}"></span>
+		<br />
+		<span>出勤時間: </span>
+		<span th:text="${age}"></span>
+		<br />
+		<span>退勤時間: </span>
+		<span th:text="${time}"></span>
+		<br />
+	</form>
+</body>
+</html>
