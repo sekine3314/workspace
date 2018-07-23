@@ -7,7 +7,7 @@
 </head>
 
 <!--<body bgcolor="#BEF781">-->
- <body bgcolor="red">
+ <body bgcolor="#BEF781">
  <h1>勤怠管理システムへようこそ</h1>
     <form action="./confirm" th:object="${languageForm}">
         <div th:each="item : ${languageMapItems}">
@@ -16,7 +16,6 @@
         </div>
 
         <input type="submit" value="出勤"/>
-        <input type="submit" value="退勤"/>
     </form>
 
 </body>

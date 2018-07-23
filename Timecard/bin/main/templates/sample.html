@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="/css/sampleCss.css" th:href="@{/css/sampleCss.css}" rel="stylesheet"></link>
+<head>
+    <title>入力画面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="header">	<!-- 追加 -->
+    <div class="header-left">勤怠管理システム</div>
+    <div class="header-right">
+      <ul>
+        <li></li>
+        <li></li>
+        <li class="selected"></li>
+      </ul>
+    </div>
+  </div>		<!-- ここまで -->
+  <div class="form-title">入力画面</div>
+  <div class="contact-form">
+  <div class="time">
+	<p>現在時刻 <span th:text="${now}"></span></p>
+	<br />
+	</div>
+	<div class="text">
+    	入力してください。
+	</div>
+	<form method="post" action="formpost">
+	<div class="form-item">
+		<span>社員氏名: </span>
+		<input type="text" name="name" value="" />
+		<br />
+		<span>出勤時間: </span>
+		<input type="text" name="age" value="" />
+		<br />
+		<span>退勤時間: </span>
+		<input type="text" name="time" value="" />
+		<br />
+		<input type="submit" value="OK" />
+	</div>
+	</form>
+	</div>
+	<div class="footer">
+    <div class="footer-left">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="like-box">
+    </div>
+  </div>
+</body>
+</html>
