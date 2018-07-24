@@ -10,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class TimecardController {
-
 	@RequestMapping(value = {"/timecard"}, method = {RequestMethod.GET})
 	public ModelAndView index() {
 

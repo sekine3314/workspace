@@ -19,14 +19,17 @@
   <div class="form-title">入力画面</div>
   <div class="contact-form">
   <div class="time">
-	<p>現在時刻 <span th:text="${now}"></span></p>
-	<br />
 	</div>
 	<div class="text">
-    	入力してください。
 	</div>
 	<form method="post" action="formpost">
 	<div class="form-item">
+<p>現在時刻 <span th:text="${now}"></span></p>
+	<br />
+	<div class="text">
+    	入力してください。
+    	お願いします。
+	</div>
 		<span>社員氏名: </span>
 		<input type="text" name="name" value="" />
 		<br />
@@ -51,5 +54,6 @@
     <div class="like-box">
     </div>
   </div>
+	</form>
 </body>
 </html>
