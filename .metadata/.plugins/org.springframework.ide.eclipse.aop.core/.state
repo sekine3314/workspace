@@ -2,6 +2,8 @@
 <aop-reference-model>
 <aop-project name="TlSample"/>
 <aop-project name="Language-2"/>
+<aop-project name="Timecard"/>
+<aop-project name="CSV"/>
 <aop-project name="sample_demo"/>
 <aop-project name="test"/>
 <aop-project name="Lect03Controller"/>
