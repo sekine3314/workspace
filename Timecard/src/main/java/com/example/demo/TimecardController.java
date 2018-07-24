@@ -36,7 +36,7 @@ public class TimecardController {
 		// 生成
 		ModelAndView mv = new ModelAndView();
 
-		// テンプレートを指定
+		// テンプレートを指定(入力画面)
 		mv.setViewName("index");
 
 		// modelに設定して画面に表示するようにする
@@ -59,7 +59,7 @@ public class TimecardController {
 		// 生成
 		ModelAndView mv = new ModelAndView();
 
-		// テンプレートを指定
+		// テンプレートを指定(出力画面)
 		mv.setViewName("index");
 
 		// modelに設定して画面に表示するようにする
