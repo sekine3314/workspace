@@ -26,7 +26,7 @@ class JavaTest {
             bw.close();
 
         } catch(IOException e) {
-            System.out.println(e);
+            System.out.println(e);	//エラーが起きたらエラー内容を表示する。
         }
     }
 }

@@ -6765,3 +6765,16 @@ Binding(CTRL+SHIFT+T,
 
 !ENTRY org.eclipse.jface.text 2 0 2018-07-25 12:01:50.687
 !MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2018-07-25 12:52:12.749
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:87)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-25 13:13:25.771
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-07-25 13:13:25.777
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
