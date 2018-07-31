@@ -5,6 +5,7 @@
 <aop-project name="CSV"/>
 <aop-project name="Timecard"/>
 <aop-project name="sample_demo"/>
+<aop-project name="JavaTraining"/>
 <aop-project name="test"/>
 <aop-project name="Lect03Controller"/>
 <aop-project name="web"/>

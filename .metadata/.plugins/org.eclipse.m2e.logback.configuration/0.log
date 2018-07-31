@@ -2432,3 +2432,4 @@
 2018-07-25 11:53:05,847 [Worker-11: ワークスペースをビルド中] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\pleiades\workspace\test\src\test\resources
 2018-07-25 16:00:20,213 [Worker-4: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2018-07-25 16:01:20,032 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-07-31 13:46:58,150 [Worker-6: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
